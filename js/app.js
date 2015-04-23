@@ -84,7 +84,7 @@ if(!window.console){
         }, false);
         
         document.getElementById("compare").addEventListener("click", function() {
-          jsond.compare(JSON.parse(jsonBoxA.value), JSON.parse(jsonBoxB.value), "root", populateResults);
+          self.startCompare();
         }, false);
 
         jsond.feedback = self.markChanged;
